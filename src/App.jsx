@@ -12,13 +12,13 @@ function App() {
   return (
     <>
       <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename={"/img-studio"}>
           <Navbar />
           <div className="pages">
             <Routes>
-              <Route path="/img-studio" element={<Home/>}/>
-              <Route path="img-studio/upscale" element={<ImgUpscale/>}/>
-              <Route path="img-studio/bgremove" element={<ImgBGRemove/>}/>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/upscale" element={<ImgUpscale/>}/>
+              <Route path="/bgremove" element={<ImgBGRemove/>}/>
             </Routes>
           </div>
           <Footer />
