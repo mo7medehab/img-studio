@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BrowserRouter basename={"/img-studio"}>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Navbar />
           <div className="pages">
             <Routes>
