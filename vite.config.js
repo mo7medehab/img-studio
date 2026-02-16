@@ -9,5 +9,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["onnxruntime-web"],
   },
-  base: "imgstudio"
+  base: "img-studio"
 })

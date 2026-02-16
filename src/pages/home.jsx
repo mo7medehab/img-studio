@@ -15,7 +15,7 @@ const Home = () => {
                         Use latest AI models to remove backgrounds from your images or to improve their resolution. Fully in browser without uploading any picture
                         to the cloud.
                     </p>
-                    <button className="btn btn-primary" href="/imgstudio/upscale">Get Started</button>
+                    <a className="btn btn-primary" href="/img-studio/upscale">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const Home = () => {
             <p className="py-6">
                 Upscale images up to 8x using AI
             </p>
-            <a className="btn btn-primary" href="/imgstudio/upscale">Get Started</a>
+            <a className="btn btn-primary" href="/img-studio/upscale">Get Started</a>
             </div>
             <div>
             <figure className="diff aspect-16/9 h-48 w-85 max-w-sm rounded-xl shadow-2xl" tabIndex={0}>
@@ -50,7 +50,7 @@ const Home = () => {
             <p className="py-6">
                 Using newest AI models, remove backgrounds from images
             </p>
-            <a className="btn btn-primary" href="/imgstudio/bgremove">Get Started</a>
+            <a className="btn btn-primary" href="/img-studio/bgremove">Get Started</a>
             </div>
             <div>
             <figure className="diff aspect-16/9 h-48 w-85 max-w-sm rounded-xl shadow-2xl" tabIndex={0}>

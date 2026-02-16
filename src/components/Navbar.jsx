@@ -7,8 +7,8 @@ const Navbar = () =>{
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
-                <li><a href="/imgstudio/upscale">Upscale</a></li>
-                <li><a href="/imgstudio/bgremove">Background removal</a></li>
+                <li><a href="/img-studio/upscale">Upscale</a></li>
+                <li><a href="/img-studio/bgremove">Background removal</a></li>
                 </ul>
             </div>
             </div>
