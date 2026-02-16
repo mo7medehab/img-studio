@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { HashRouter , Routes, Route } from 'react-router'
 
 import Home from './pages/home'
 import ImgUpscale from './pages/imgUpscale'
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <HashRouter >
           <Navbar />
           <div className="pages">
             <Routes>
@@ -22,7 +22,7 @@ function App() {
             </Routes>
           </div>
           <Footer />
-        </BrowserRouter>
+        </HashRouter >
       </div>
     </>
   )
