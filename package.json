@@ -8,12 +8,15 @@
     "dev": "vite ",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deply": "gh-pages -d dist"
   },
   "dependencies": {
     "@huggingface/transformers": "^3.8.1",
     "@huggingface/transformers-monorepo": "github:huggingface/transformers.js#v4",
     "@tailwindcss/vite": "^4.1.18",
+    "gh-pages": "^6.3.0",
     "i": "^0.3.7",
     "jimp": "^1.6.0",
     "npm": "^11.8.0",
