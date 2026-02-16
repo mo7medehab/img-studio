@@ -16,7 +16,7 @@ function App() {
           <Navbar />
           <div className="pages">
             <Routes>
-              <Route path="/" element={<Home/>}/>
+              <Route path="" element={<Home/>}/>
               <Route path="/upscale" element={<ImgUpscale/>}/>
               <Route path="/bgremove" element={<ImgBGRemove/>}/>
             </Routes>
