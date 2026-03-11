@@ -9,7 +9,7 @@ const Footer = () => {
             </p>
         </aside>
         <nav>
-            <h6 className="footer-title">Github</h6>
+            <a className="footer-title " href="https://github.com/mo7medehab/img-studio" target="_blank">Github</a>
         </nav>
         </footer>
 

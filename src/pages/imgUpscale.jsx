@@ -22,10 +22,14 @@ const ImgUpscale = () => {
         myWorker.postMessage([file, upscalefactor]);
         setProgress(true)
         myWorker.onmessage = function(e) {
-            if (e.data) {
+            if (e?.data && e?.data != "Failed") {
                 setNewFile(e.data);
                 setProgress(false)
-            } 
+            }else{
+                setFile();
+                setProgress(false)
+                alert("An error occurred: Please check your input.");
+            }
         };
         
     }

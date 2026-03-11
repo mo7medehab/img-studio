@@ -16,10 +16,15 @@ const ImgBGRemove = () => {
         myWorker.postMessage([file]);
         setProgress(true)
         myWorker.onmessage = function(e) {
-            if (e.data) {
+            console.log(e)
+            if (e?.data && e?.data != "Failed") {
                 setNewFile(e.data);
                 setProgress(false)
-            } 
+            }else{
+                setFile();
+                setProgress(false)
+                alert("An error occurred: Please check your input.");
+            }
         };
         
     }

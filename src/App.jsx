@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { HashRouter , Routes, Route } from 'react-router'
+import { BrowserRouter , Routes, Route } from 'react-router'
 
 import Home from './pages/home'
 import ImgUpscale from './pages/imgUpscale'
@@ -12,17 +12,17 @@ function App() {
   return (
     <>
       <div className="App">
-        <HashRouter >
+        <BrowserRouter >
           <Navbar />
           <div className="pages">
             <Routes>
-              <Route path="" element={<Home/>}/>
-              <Route path="/upscale" element={<ImgUpscale/>}/>
-              <Route path="/bgremove" element={<ImgBGRemove/>}/>
+              <Route path="/img-studio/" element={<Home/>}/>
+              <Route path="/img-studio/upscale" element={<ImgUpscale/>}/>
+              <Route path="/img-studio/bgremove" element={<ImgBGRemove/>}/>
             </Routes>
           </div>
           <Footer />
-        </HashRouter >
+        </BrowserRouter >
       </div>
     </>
   )
