@@ -1,16 +1,38 @@
-# React + Vite
+# Image studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project uses AI to upscale and background removal 
 
-Currently, two official plugins are available:
+![The site main page](ss1.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+![Upscaler page](ss2.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+![Background removal page](ss3.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## About this project
+
+This project uses:
+- [React](https://react.dev/) for the frontend
+- [transformers.js](https://huggingface.co/docs/transformers.js/index) for AI models
+
+Models used:
+- [swin2SR-lightweight-x2-64](https://huggingface.co/Xenova/swin2SR-lightweight-x2-64) For upscaling
+- [briaai/RMBG-1.4](https://huggingface.co/briaai/RMBG-1.4) For background-removal
+
+## Running this project 
+
+You can access it on github pages at: [Image studio](https://mo7medehab.github.io/img-studio/)
+
+or
+
+Run it locally by cloning this repository:
+```
+git clone https://github.com/mo7medehab/img-studio.git
+```
+
+Then go to the file location and run npm:
+```
+npm run dev
+```
